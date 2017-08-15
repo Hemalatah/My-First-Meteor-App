@@ -1,0 +1,14 @@
+<template name="profile">
+	<div class="row">
+		<center>
+			<img src="https://pbs.twimg.com/profile_images/688549100116049920/JSubN4B5_400x400.png" alt="">
+			<h2>{{currentUser.profile.name}}</h2>
+			<h4>My Pins</h4>
+		</center>
+	</div>
+	<div class="grid">
+		{{#each myposts}}
+			{{> postItem}}
+		{{/each}}
+	</div>
+</template>

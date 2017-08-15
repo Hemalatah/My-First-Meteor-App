@@ -1,0 +1,20 @@
+<template name="commentItem">
+	<div class="row">
+		<li>
+			<div class="col-md-2">
+				<img src="{{author_avatar_url}}" alt="" class="avatar">
+			</div>
+			<div class="col-md-8">
+				<span class="author">
+					<strong>{{author_name}}</strong>
+					<p>{{body}}</p>
+				</span>
+			</div>
+			<div class="col-md-2">
+				<div class="date">
+					{{formatDate submitted}}
+				</div>
+			</div>
+		</li>
+	</div>
+</template>

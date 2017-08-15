@@ -1,0 +1,20 @@
+<template name="postsPreview">
+	<center>
+		<h3>Preview Your Post</h3>
+		<div class="item">
+			<img src="{{preview.content.images.[0]}}" alt="">
+			<h4><a href="{{preview.url}}">{{preview.content.name}}</a></h4>
+			<p>{{preview.content.description}}</p>
+		</div>
+		<div>
+			<form>
+				<input name="url" type="hidden" value="{{preview.url}}">
+				<input name="title" type="hidden" value="{{preview.content.name}}">
+				<input name="description" type="hidden" value="{{preview.content.description}}">
+				<input name="media_url" type="hidden" value="{{preview.content.images.[0]}}">
+				<br/>
+				<input type="submit" value="Publish Post" class="btn btn-primary">
+			</form>
+		</div>
+	</center>
+</template>

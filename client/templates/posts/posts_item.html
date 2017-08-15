@@ -1,0 +1,21 @@
+<template name="postItem">
+	<div class="item">
+		<a href="/posts/{{_id}}">
+			<img src="{{media_url}}" alt="">
+			<h4>
+				<a href="{{url}}">
+					{{title}}
+				</a>
+			</h4>
+			<p>
+				{{description}}
+			</p>
+			<div>
+				<img class="avatar" src="https://pbs.twimg.com/profile_images/688549100116049920/JSubN4B5_400x400.png" alt="">
+				<span class="author">
+					{{author_name}}
+				</span>
+			</div>
+		</a>
+	</div>
+</template>
